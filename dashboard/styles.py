@@ -50,6 +50,8 @@ section[data-testid="stSidebar"] {
     background: #1A1A1A !important;
     border-right: 3px solid #C0392B;
 }
+
+/* All text in sidebar is light */
 section[data-testid="stSidebar"] * { color: #F5F5F5 !important; }
 section[data-testid="stSidebar"] a { color: #F5F5F5 !important; }
 section[data-testid="stSidebar"] .stSelectbox label,
@@ -58,6 +60,61 @@ section[data-testid="stSidebar"] .stTextInput label {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+
+/* Sidebar buttons — dark background, light text */
+section[data-testid="stSidebar"] .stButton > button {
+    background: #2A2A2A !important;
+    color: #E8E8E8 !important;
+    border: 1px solid #3A3A3A !important;
+    border-radius: 8px !important;
+    font-size: 0.85rem !important;
+    text-align: left !important;
+    padding: 8px 12px !important;
+    width: 100% !important;
+}
+section[data-testid="stSidebar"] .stButton > button:hover {
+    background: #333 !important;
+    border-color: #C0392B !important;
+    color: #fff !important;
+}
+
+/* Primary buttons in sidebar stay red */
+section[data-testid="stSidebar"] .stButton > button[kind="primary"] {
+    background: #C0392B !important;
+    border-color: #C0392B !important;
+    color: #fff !important;
+}
+section[data-testid="stSidebar"] .stButton > button[kind="primary"]:hover {
+    background: #A93226 !important;
+}
+
+/* Radio buttons in sidebar */
+section[data-testid="stSidebar"] .stRadio label {
+    color: #E8E8E8 !important;
+    font-size: 0.9rem !important;
+}
+section[data-testid="stSidebar"] .stRadio div[role="radiogroup"] {
+    gap: 4px !important;
+}
+
+/* Input fields in sidebar */
+section[data-testid="stSidebar"] input {
+    background: #2A2A2A !important;
+    color: #F5F5F5 !important;
+    border-color: #3A3A3A !important;
+}
+
+/* Selectbox in sidebar */
+section[data-testid="stSidebar"] .stSelectbox > div > div {
+    background: #2A2A2A !important;
+    color: #F5F5F5 !important;
+    border-color: #3A3A3A !important;
+}
+
+/* Dividers */
+section[data-testid="stSidebar"] hr {
+    border-color: #333 !important;
 }
 
 .page-title {

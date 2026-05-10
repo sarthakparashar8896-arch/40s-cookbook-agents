@@ -6,8 +6,11 @@ textColor          = "#1A1A1A"
 font               = "sans serif"
 
 [server]
-maxUploadSize = 10
-headless      = true
+maxUploadSize        = 10
+headless             = true
+maxMessageSize       = 200
+fileWatcherType      = "none"
+enableStaticServing  = false
 
 [browser]
 gatherUsageStats = false

@@ -36,7 +36,16 @@
       "Read(//Users/sarthakparashar/.config/gh/**)",
       "Bash(pip3 show *)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(curl -s http://localhost:8501)",
+      "Bash(curl -L --progress-bar \"https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-darwin-arm64.tgz\" -o /tmp/cloudflared.tgz)",
+      "Bash(tar xzf *)",
+      "Bash(chmod +x /tmp/cloudflared)",
+      "Bash(/tmp/cloudflared --version)",
+      "Bash(/tmp/cloudflared tunnel *)",
+      "Bash(jobs -l)",
+      "Bash(chmod +x /Users/sarthakparashar/Documents/40s-cookbook-agents/dashboard/start.sh)"
     ]
   }
 }

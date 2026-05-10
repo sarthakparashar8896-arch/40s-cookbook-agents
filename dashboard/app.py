@@ -32,6 +32,15 @@ section[data-testid="stSidebar"] {
 }
 section[data-testid="stSidebar"] * { color: #F5F5F5 !important; }
 section[data-testid="stSidebar"] .stSelectbox label { color: #999 !important; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+section[data-testid="stSidebar"] .stRadio label { color: #E8E8E8 !important; font-size: 0.9rem !important; }
+section[data-testid="stSidebar"] .stButton > button {
+    background: #2A2A2A !important; color: #E8E8E8 !important;
+    border: 1px solid #3A3A3A !important; border-radius: 8px !important;
+}
+section[data-testid="stSidebar"] .stButton > button:hover {
+    background: #333 !important; border-color: #C0392B !important; color: #fff !important;
+}
+section[data-testid="stSidebar"] hr { border-color: #333 !important; }
 
 /* Cards */
 .card {
@@ -162,7 +171,7 @@ with st.sidebar:
     )
 
     st.markdown("""
-    <div style="position:absolute; bottom:24px; left:24px; right:24px; font-size:0.72rem; color:#555; border-top:1px solid #333; padding-top:16px;">
+    <div style="margin-top:40px; font-size:0.72rem; color:#555; border-top:1px solid #333; padding-top:16px;">
         Research: May 2026<br>
         Version 1.0 · Confidential
     </div>

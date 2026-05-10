@@ -26,9 +26,13 @@ def price_per_100g(price_inr: float, pack_size_g: float) -> float:
 
 
 def get_anthropic_client():
-    api_key = st.secrets.get("ANTHROPIC_API_KEY", "") or os.getenv("ANTHROPIC_API_KEY", "")
+    try:
+        secrets_key = st.secrets.get("ANTHROPIC_API_KEY", "")
+    except Exception:
+        secrets_key = ""
+    api_key = os.getenv("ANTHROPIC_API_KEY", "") or secrets_key or st.session_state.get("api_key", "")
     if not api_key:
-        st.error("ANTHROPIC_API_KEY not set. Add it to `.streamlit/secrets.toml`.")
+        st.error("Enter your Anthropic API key in the Agent Chat page sidebar first.")
         st.stop()
     return anthropic.Anthropic(api_key=api_key)
 

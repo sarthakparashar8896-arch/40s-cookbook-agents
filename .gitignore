@@ -27,3 +27,6 @@ build/
 
 # Logs
 *.log
+dashboard/40s_cookbook.db
+dashboard/40s_cookbook.db-shm
+dashboard/40s_cookbook.db-wal
