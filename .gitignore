@@ -1,0 +1,29 @@
+# Secrets — never commit
+.streamlit/secrets.toml
+*.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# macOS
+.DS_Store
+.AppleDouble
+*.swp
+
+# Temp lock files from Office
+~$*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log

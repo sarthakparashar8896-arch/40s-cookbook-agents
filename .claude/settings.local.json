@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:blinkit.com)",
+      "WebFetch(domain:www.flipkart.com)",
+      "WebFetch(domain:pricee.com)",
+      "WebFetch(domain:www.farmdidi.com)",
+      "WebFetch(domain:priyafoods.com)",
+      "WebFetch(domain:www.patanjaliayurved.net)",
+      "WebFetch(domain:www.zeptonow.com)",
+      "WebFetch(domain:www.zepto.com)",
+      "WebFetch(domain:www.amazon.in)",
+      "Read(//Users/sarthakparashar/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/33e62655-a701-4977-8930-043e6b1a174a/5d92da17-4f9f-4991-8aab-d4ea480dc17e/skills/xlsx/scripts/**)",
+      "Read(//Users/sarthakparashar/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/33e62655-a701-4977-8930-043e6b1a174a/5d92da17-4f9f-4991-8aab-d4ea480dc17e/skills/docx/scripts/**)",
+      "Bash(python build_excel.py)",
+      "Bash(python3 build_excel.py)",
+      "Bash(pip3 install *)",
+      "Bash(npm list *)",
+      "Bash(npm install *)",
+      "Bash(node build_docx.js)",
+      "Bash(npm root *)",
+      "Bash(NODE_PATH=$\\(npm root -g\\) node build_docx.js)",
+      "Bash(/Library/Developer/CommandLineTools/usr/bin/python3 -c \"import streamlit, plotly, pandas; print\\('All imports OK'\\)\")",
+      "Bash(python3 build_ue_excel.py)",
+      "Bash(NODE_PATH=$\\(npm root -g\\) node build_ue_docx.js)",
+      "Bash(chmod +x /Users/sarthakparashar/Documents/40s-cookbook-agents/dashboard/start_hub.sh)",
+      "Bash(pip3 --version)",
+      "Bash(pip --version)",
+      "Bash(python3 -c \"import fastapi; print\\('fastapi ok'\\)\")",
+      "Bash(python3 -c \"import uvicorn; print\\('uvicorn ok'\\)\")",
+      "Bash(python3 -c \"import anthropic; print\\('anthropic ok'\\)\")",
+      "Bash(ls /Users/sarthakparashar/Documents/40s-cookbook-agents/dashboard/.streamlit 2>/dev/null || echo \"No .streamlit dir\" && ls /Users/sarthakparashar/Documents/40s-cookbook-agents/dashboard/assets/ 2>/dev/null && ls /Users/sarthakparashar/.claude/agents/ 2>/dev/null | head -20)",
+      "Read(//Users/sarthakparashar/.claude/**)",
+      "Read(//Users/sarthakparashar/**)",
+      "Read(//Users/sarthakparashar/.config/gh/**)",
+      "Bash(pip3 show *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
